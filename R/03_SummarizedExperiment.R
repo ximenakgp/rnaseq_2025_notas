@@ -67,8 +67,8 @@ stopifnot(identical(rse[, c(1,4,6)], rse[, c("A", "D", "F")]))
 
 ## ----isee_basic, eval = FALSE---------------------------------
 # ## Explora el objeto rse de forma interactiva
-# library("iSEE")
-# iSEE::iSEE(rse)
+library("iSEE")
+iSEE::iSEE(rse)
 
 
 ## ----download_sce_layer---------------------------------------

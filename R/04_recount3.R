@@ -55,14 +55,15 @@ sort(tablerowRanges(rse_gene_SRP009615)
 
 # mcols y rowData es lo mismo
 ## ----"interactive_display", eval = FALSE----------------------
-# ## Explora los proyectos disponibles de forma interactiva
+# Explora los proyectos disponibles de forma interactiva
 proj_info_interactive <- interactiveDisplayBase::display(human_projects)
-# ## Selecciona un solo renglón en la tabla y da click en "send".
+
+# Selecciona un solo renglón en la tabla y da click en "send".
 # BigWigURL
 # ## Aquí verificamos que solo seleccionaste un solo renglón.
-# stopifnot(nrow(proj_info_interactive) == 1)
+stopifnot(nrow(proj_info_interactive) == 1)
 # ## Crea el objeto RSE
-# rse_gene_interactive <- create_rse(proj_info_interactive)
+rse_gene_interactive <- create_rse(proj_info_interactive)
 
 
 ## ----"tranform_counts"----------------------------------------
@@ -80,4 +81,4 @@ colData(rse_gene_SRP009615)[,
   grepl("^sra_attribute", colnames(colData(rse_gene_SRP009615)))
 ]
 
-iSEE::iSEE(rse_gene_SRP009615)
+#iSEE::iSEE(rse_gene_SRP009615)

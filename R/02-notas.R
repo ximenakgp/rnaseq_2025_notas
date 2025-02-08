@@ -13,16 +13,15 @@ BiocManager::valid()
 
 .libPaths()
 # Nos dice en donde esta instalado el paquete
-[1] "/home/ximenagp/R/x86_64-pc-linux-gnu-library/4.4"
-[2] "/usr/local/lib/R/site-library"
-[3] "/usr/lib/R/site-library"
-[4] "/usr/lib/R/library"
+# [1] "/home/ximenagp/R/x86_64-pc-linux-gnu-library/4.4"
+# [2] "/usr/local/lib/R/site-library"
+# [3] "/usr/lib/R/site-library"
+# [4] "/usr/lib/R/library"
 # En algunas direcciones tenemos permiso para instalar y en otras no
 
 ?BiocManager::install
 ?install.packages
-# el argumento lib no dice en que lugar se estan instalando
-# character vector giving the library directories where to install the packages. Recycled as needed. If missing, defaults to the first element of .libPaths().
+# El argumento lib no dice en que lugar se estan instalando
 
 # Cada paquete es un directorio
 
